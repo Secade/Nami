@@ -17,6 +17,10 @@ public class Account {
         cards = new ArrayList<>();
     }
 
+    public Account(){
+
+    }
+
     public String getUsername() {
         return username;
     }
@@ -31,6 +35,26 @@ public class Account {
 
     public String getPhone() {
         return phone;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setCards(ArrayList<Beep> cards) {
+        this.cards = cards;
     }
 
     public ArrayList<Beep> getCards() {
