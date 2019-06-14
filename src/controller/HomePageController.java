@@ -53,8 +53,8 @@ public class HomePageController {
 
         guestLogin.setOnAction(event -> {
             try {
-                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/DashBoard.fxml"));
-                Stage stage = (Stage) loginBtn.getScene().getWindow();
+                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/HeatMap.fxml"));
+                Stage stage = (Stage) guestLogin.getScene().getWindow();
                 Scene scene = new Scene(pane.load());
                 stage.setScene(scene);
             } catch (Exception b) {

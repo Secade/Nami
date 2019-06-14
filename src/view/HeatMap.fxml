@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HeatMapController">
+   <children>
+      <AnchorPane layoutY="640.0" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #F7D354;">
+         <children>
+            <ImageView fx:id="homeBtn" fitHeight="47.0" fitWidth="47.0" layoutX="177.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fareBtn" fitHeight="47.0" fitWidth="47.0" layoutX="290.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/fee_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heatMapBtn" fitHeight="47.0" fitWidth="47.0" layoutX="65.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/train_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="newsUpdates" hbarPolicy="NEVER" layoutX="40.0" layoutY="152.0" prefHeight="450.0" prefWidth="320.0" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="318.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label layoutX="27.0" layoutY="29.0" prefHeight="71.0" prefWidth="264.0" text="Train has just left Taft Station" wrapText="true">
+                     <font>
+                        <Font name="Raleway" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="100.0" prefHeight="71.0" prefWidth="264.0" text="Train Accident occured in Libertad" textFill="#f7d354" wrapText="true">
+                     <font>
+                        <Font name="Raleway" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="179.0" prefHeight="71.0" prefWidth="264.0" text="Skip train coming from Roosevelt" wrapText="true">
+                     <font>
+                        <Font name="Raleway" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="257.0" prefHeight="71.0" prefWidth="264.0" text="Train has just left Vito Cruz Station" textFill="#f7d354" wrapText="true">
+                     <font>
+                        <Font name="Raleway" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fitHeight="84.0" fitWidth="381.0" layoutX="10.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/nami_logo_yellow_ver.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
