@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/view/HomePage.fxml"));
         primaryStage.setTitle("Hacker Cup 2019");
-        primaryStage.setScene(new Scene(root, 360, 720));
+        primaryStage.setScene(new Scene(root, 400, 700));
         primaryStage.show();
         primaryStage.setResizable(false);
     }
