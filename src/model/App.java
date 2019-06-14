@@ -12,8 +12,8 @@ public class App {
         account = null;
     }
 
-    private  void register(String username, String password, String email, String phone) throws SQLException {
-        Account account = new Account(username, password, email, phone);
+    private  void register(String username, String password, String phone) throws SQLException {
+        Account account = new Account(username, password, phone);
         accountService.add(account);
     }
 
@@ -21,10 +21,10 @@ public class App {
         this.account = account;
     }
 
-    public boolean login(String email, String password) throws SQLException {
-        ObservableList<Object> emails = accountService.getAll();
-        for(Object o : emails){
-            if(((Account)o).getEmail().equals(email)) {
+    public boolean login(String username, String password) throws SQLException {
+        ObservableList<Object> accounts = accountService.getAll();
+        for(Object o : accounts){
+            if(((Account)o).getUsername().equals(username)) {
                 if (((Account)o).getPassword().equals(password)) {
                     this.account = ((Account)o);
                     return true;
