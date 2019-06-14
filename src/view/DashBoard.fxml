@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="400.0" pickOnBounds="true">
+         <image>
+            <Image url="@../map.JPG" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="640.0" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #F7D354;" />
+      <Path fx:id="trainPath" fill="DODGERBLUE" layoutX="45.0" layoutY="-45.0" stroke="BLACK" strokeType="INSIDE">
+         <elements>
+            <MoveTo x="-25.0" y="100.0" />
+            <LineTo x="-80.0" y="-200.0" />
+         </elements>
+      </Path>
+      <Path fx:id="trainPathBack" fill="DODGERBLUE" layoutX="80.0" layoutY="110.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE">
+         <elements>
+            <MoveTo x="-25.0" y="100.0" />
+            <LineTo x="-80.0" y="-200.0" />
+         </elements>
+      </Path>
+      <Rectangle fx:id="train" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="43.0" layoutX="157.0" layoutY="505.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+      <Button fx:id="test" layoutX="301.0" layoutY="67.0" mnemonicParsing="false" text="Button" />
+      <Rectangle fx:id="trainBack" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="43.0" layoutX="60.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+      <Button fx:id="testback" layoutX="301.0" layoutY="111.0" mnemonicParsing="false" text="Button" />
+      <Path fx:id="trainPathReverse" fill="DODGERBLUE" layoutX="150.0" layoutY="410.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE">
+         <elements>
+            <MoveTo x="-25.0" y="100.0" />
+            <LineTo x="-80.0" y="-200.0" />
+         </elements>
+      </Path>
+      <Button fx:id="testReverse" layoutX="301.0" layoutY="163.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>
