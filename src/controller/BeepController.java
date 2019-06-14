@@ -3,28 +3,20 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-public class HeatMapController {
+public class BeepController {
 
     @FXML
-    ScrollPane newsUpdates;
+    private ImageView  heatMapBtn, homeBtn, fareBtn,BeepBtn;
 
-    @FXML
-    ImageView heatMapBtn, homeBtn, fareBtn;
-
-    @FXML private Button BeepBtn;
 
     public void initialize(){
-
-
-        heatMapBtn.setOnMouseClicked(event -> {
+        homeBtn.setOnMouseClicked(event -> {
             try {
-                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/DashBoard.fxml"));
-                Stage stage = (Stage) heatMapBtn.getScene().getWindow();
+                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/HeatMap.fxml"));
+                Stage stage = (Stage) homeBtn.getScene().getWindow();
                 Scene scene = new Scene(pane.load());
                 stage.setScene(scene);
             } catch (Exception b) {
@@ -43,10 +35,10 @@ public class HeatMapController {
             }
         });
 
-        BeepBtn.setOnMouseClicked(event -> {
+        heatMapBtn.setOnMouseClicked(event -> {
             try {
-                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/Beep.fxml"));
-                Stage stage = (Stage) BeepBtn.getScene().getWindow();
+                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/DashBoard.fxml"));
+                Stage stage = (Stage) heatMapBtn.getScene().getWindow();
                 Scene scene = new Scene(pane.load());
                 stage.setScene(scene);
             } catch (Exception b) {

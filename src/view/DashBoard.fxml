@@ -5,9 +5,12 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.LineTo?>
 <?import javafx.scene.shape.MoveTo?>
 <?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
@@ -17,24 +20,11 @@
             <Image url="@../assets/map.JPG" />
          </image>
       </ImageView>
-      <AnchorPane layoutY="640.0" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #F7D354;">
-         <children>
-            <ImageView fx:id="homeBtn" fitHeight="47.0" fitWidth="47.0" layoutX="177.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/home_icon.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="fareBtn" fitHeight="47.0" fitWidth="47.0" layoutX="290.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/fee_icon.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="heatMapBtn" fitHeight="47.0" fitWidth="47.0" layoutX="65.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/train_icon.png" />
-               </image>
-            </ImageView>
-         </children></AnchorPane>
+      <Circle fx:id="Magallanes" fill="DODGERBLUE" layoutX="350.0" layoutY="545.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Taft" fill="DODGERBLUE" layoutX="207.0" layoutY="563.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="EDSA" fill="#f24b67" layoutX="175.0" layoutY="563.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Libertad" fill="#f24b67" layoutX="117.0" layoutY="258.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="GilPuyat" fill="#f24b67" layoutX="70.0" layoutY="67.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
       <Path fx:id="trainPath" fill="DODGERBLUE" layoutX="60.0" layoutY="-60.0" stroke="BLACK" strokeType="INSIDE">
          <elements>
             <MoveTo x="-25.0" y="100.0" />
@@ -61,7 +51,7 @@
             <Image url="@../assets/lrt_train_icon.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="trainBack" fitHeight="50.0" fitWidth="50.0" layoutX="45.0" layoutY="35.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="trainBack" disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="45.0" layoutY="35.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/lrt_train_icon.png" />
          </image>
@@ -88,6 +78,123 @@
                   <Font name="Raleway" size="19.0" />
                </font>
             </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="TaftDetails" layoutX="175.0" layoutY="429.0" opacity="0.0" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="7.0" layoutY="11.0" text="Taft Station MRT">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="40.0" prefHeight="50.0" prefWidth="77.0" text="Station Traffic:" wrapText="true">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="68.0" layoutX="83.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/three_is_a_crowd_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MagallanesDetails" layoutX="218.0" layoutY="410.0" opacity="0.0" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutY="11.0" text="Magallanes Station MRT">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="40.0" prefHeight="50.0" prefWidth="68.0" text="Station Traffic:" wrapText="true">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="22.0" layoutX="83.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/one_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EDSADetails" layoutX="18.0" layoutY="438.0" opacity="0.0" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="7.0" layoutY="11.0" text="EDSA Station LRT">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="36.0" prefHeight="60.0" prefWidth="68.0" text="Station Traffic:" wrapText="true">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="65.0" layoutX="83.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/two_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LibertadDetails" layoutX="135.0" layoutY="174.0" opacity="0.0" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="7.0" layoutY="11.0" text="Libertad Station LRT">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="36.0" prefHeight="60.0" prefWidth="68.0" text="Station Traffic:" wrapText="true">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="65.0" layoutX="83.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/two_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GilPuyatDetails" layoutX="101.0" layoutY="27.0" opacity="0.0" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="7.0" layoutY="11.0" text="Gil Puyat Station LRT">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="36.0" prefHeight="60.0" prefWidth="68.0" text="Station Traffic:" wrapText="true">
+               <font>
+                  <Font name="Raleway" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="65.0" layoutX="83.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/three_is_a_crowd_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="640.0" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #F7D354;">
+         <children>
+            <ImageView fx:id="homeBtn" fitHeight="47.0" fitWidth="47.0" layoutX="135.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fareBtn" fitHeight="47.0" fitWidth="47.0" layoutX="235.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/fee_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heatMapBtn" fitHeight="47.0" fitWidth="47.0" layoutX="35.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/train_icon.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f7d354" height="30.0" layoutX="320.0" layoutY="15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="50.0" />
+            <Line endX="87.0" layoutX="270.0" layoutY="25.0" startX="53.0" stroke="WHITE" strokeWidth="3.0" />
+            <Button fx:id="BeepBtn" layoutX="316.0" layoutY="15.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="56.0" text="Button" />
          </children>
       </AnchorPane>
    </children>

@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Path;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
@@ -21,15 +22,18 @@ public class DashBoardController {
 
     @FXML private ImageView train,trainBack, heatMapBtn, homeBtn, fareBtn, trainCapacity, mapPic;
 
-    @FXML private Button test,testback,testReverse;
+    @FXML private Button test,testback,testReverse,BeepBtn;
 
-    @FXML private AnchorPane trainDetails;
+    @FXML private AnchorPane trainDetails,MagallanesDetails, TaftDetails, EDSADetails, LibertadDetails, GilPuyatDetails;
     @FXML private Label trainName;
+    @FXML private Circle Magallanes, Taft, EDSA, Libertad, GilPuyat;
+
 
     private boolean isDetailsOpen;
 
     public void initialize(){
         isDetailsOpen=false;
+        trainBack.setDisable(true);
         PathTransition move = new PathTransition();
         move.setDuration(Duration.seconds(5));
         move.setPath(trainPath);
@@ -51,6 +55,7 @@ public class DashBoardController {
         move.play();
         move.setOnFinished(event -> {
             trainBack.setOpacity(1);
+            trainBack.setDisable(false);
             train.setImage(new Image(getClass().getResourceAsStream("/assets/crashed_train_icon.png")));
             moveBack.play();
 
@@ -89,6 +94,17 @@ public class DashBoardController {
             }
         });
 
+        BeepBtn.setOnMouseClicked(event -> {
+            try {
+                FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/Beep.fxml"));
+                Stage stage = (Stage) BeepBtn.getScene().getWindow();
+                Scene scene = new Scene(pane.load());
+                stage.setScene(scene);
+            } catch (Exception b) {
+                b.printStackTrace();
+            }
+        });
+
         test.setOnAction(event -> {
             move.play();
 
@@ -115,6 +131,42 @@ public class DashBoardController {
             trainDetails.setOpacity(1);
             trainName.setText("Train Name: B-02");
             trainCapacity.setImage(new Image(getClass().getResourceAsStream("/assets/two_icon.png")));
+        });
+
+
+        Magallanes.setOnMouseEntered(event -> {
+            MagallanesDetails.setOpacity(1);
+        });
+        Magallanes.setOnMouseExited(event -> {
+            MagallanesDetails.setOpacity(0);
+        });
+
+        Taft.setOnMouseEntered(event -> {
+            TaftDetails.setOpacity(1);
+        });
+        Taft.setOnMouseExited(event -> {
+            TaftDetails.setOpacity(0);
+        });
+
+        EDSA.setOnMouseEntered(event -> {
+            EDSADetails.setOpacity(1);
+        });
+        EDSA.setOnMouseExited(event -> {
+            EDSADetails.setOpacity(0);
+        });
+
+        Libertad.setOnMouseEntered(event -> {
+            LibertadDetails.setOpacity(1);
+        });
+        Libertad.setOnMouseExited(event -> {
+            LibertadDetails.setOpacity(0);
+        });
+
+        GilPuyat.setOnMouseEntered(event -> {
+            GilPuyatDetails.setOpacity(1);
+        });
+        GilPuyat.setOnMouseExited(event -> {
+            GilPuyatDetails.setOpacity(0);
         });
     }
 }

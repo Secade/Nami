@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f52f6369-196a-4f55-9cb1-88783e3a574b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Nami/META-INF/Nami.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Nami/view/Fee.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Nami/view/Fee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/map.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/HeatMapController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Fee.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Fee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/HeatMap.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/BeepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Beep.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nami/assets/mapa-metro-manila2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nami/controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nami/controller/HomePageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nami/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nami/model/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nami/view/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nami/view/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nami/view/DashBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nami/view/DashBoard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nami/view/Fee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nami/view/Fee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nami/view/HeatMap.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nami/view/HeatMap.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/DashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DashBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/HeatMapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/HeatMapController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/DashBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashBoard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Fee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Fee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/HeatMap.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HeatMap.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +38,24 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/HomePage.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/DashBoard.fxml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="238">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/JDBCConnectionPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -83,22 +72,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/HeatMapController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" selection-end-column="11" />
+            <state relative-caret-position="204">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/DashBoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="100">
+              <caret line="22" column="96" selection-start-line="22" selection-start-column="96" selection-end-line="22" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/Beep.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/BeepController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/HeatMap.fxml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -107,8 +124,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>trainBack</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,6 +145,8 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/view/HomePage.fxml" />
         <option value="$PROJECT_DIR$/src/controller/HomePageController.java" />
+        <option value="$PROJECT_DIR$/src/view/Beep.fxml" />
+        <option value="$PROJECT_DIR$/src/controller/BeepController.java" />
         <option value="$PROJECT_DIR$/src/controller/HeatMapController.java" />
         <option value="$PROJECT_DIR$/src/controller/DashBoardController.java" />
       </list>
@@ -225,10 +251,18 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="aawdwawdawdawdawdawd">
+      <created>1560551518385</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560551518385</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666000" />
+    <option name="totallyTimeSpent" value="3974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -264,7 +298,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="T" />
-    <option name="LAST_COMMIT_MESSAGE" value="T" />
+    <MESSAGE value="aawdwawdawdawdawdawd" />
+    <option name="LAST_COMMIT_MESSAGE" value="aawdwawdawdawdawdawd" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -287,14 +322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/DashBoard.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/HomePage.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -305,10 +332,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/HomePageController.java">
+    <entry file="file://$PROJECT_DIR$/src/view/HomePage.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/DashBoard.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/JDBCConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/HeatMap.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Beep.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/BeepController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DashBoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="22" column="96" selection-start-line="22" selection-start-column="96" selection-end-line="22" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -317,15 +381,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/HeatMapController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" selection-end-column="11" />
+        <state relative-caret-position="204">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DashBoardController.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
