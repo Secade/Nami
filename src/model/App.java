@@ -3,6 +3,7 @@ package model;
 import javafx.collections.ObservableList;
 
 import java.sql.SQLException;
+import java.util.Random;
 
 public class App {
     private Account account;
@@ -36,5 +37,10 @@ public class App {
 
     public void logout() {
         this.account = null;
+    }
+
+    public double feeCalculation(String from, String to) {
+        Random random = new Random();
+        return random.nextInt(36) + 15.0;
     }
 }
