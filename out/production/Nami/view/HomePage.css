@@ -1,0 +1,18 @@
+.AnchorPane{
+    -fx-border-radius: 25px;
+}
+
+.text-field {
+    -fx-border-color:  #F7D354;
+    -fx-border-width: 5px;
+    -fx-background-color: transparent;
+    -fx-border-radius: 200px;
+    -fx-padding: 10px 10px 10px 15px;
+}
+
+.button{
+    -fx-border-radius: 25px;
+    -fx-border-width: 5px;
+    -fx-background-color: transparent;
+    -fx-border-color: #F7D354;
+}
