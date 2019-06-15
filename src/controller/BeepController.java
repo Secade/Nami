@@ -3,13 +3,15 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class BeepController {
 
     @FXML
-    private ImageView  heatMapBtn, homeBtn, fareBtn,BeepBtn;
+    private ImageView  heatMapBtn, homeBtn, fareBtn;
+    @FXML private Button BeepBtn;
 
 
     public void initialize(){

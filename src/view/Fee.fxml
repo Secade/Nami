@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" stylesheets="@Fee.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="controller.FeeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" stylesheets="@Fee.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="639.0" prefWidth="399.0">
          <children>
@@ -43,7 +43,7 @@
                   <Font name="Alba" size="36.0" />
                </font>
             </Label>
-            <Label fx:id="fee_label" layoutX="191.0" layoutY="480.0" prefHeight="55.0" prefWidth="84.0">
+            <Label fx:id="fee_label" layoutX="191.0" layoutY="480.0" prefHeight="69.0" prefWidth="135.0">
                <font>
                   <Font name="Raleway ExtraBold" size="47.0" />
                </font>

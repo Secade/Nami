@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 
 <AnchorPane prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BeepController">
@@ -32,5 +34,21 @@
             <Button fx:id="BeepBtn" layoutX="316.0" layoutY="15.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="56.0" text="Button" />
          </children>
       </AnchorPane>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f7d354" height="218.0" layoutX="39.0" layoutY="132.0" stroke="#f7d354" strokeType="INSIDE" width="331.0" />
+      <Label fx:id="beepCredits" layoutX="95.0" layoutY="204.0" text="P 420.00" textFill="WHITE">
+         <font>
+            <Font name="Raleway" size="53.0" />
+         </font>
+      </Label>
+      <Label fx:id="beepCredits1" layoutX="85.0" layoutY="159.0" text="Total Balance:">
+         <font>
+            <Font name="Raleway" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="beepCredits11" layoutX="90.0" layoutY="255.0" prefHeight="83.0" prefWidth="230.0" text="Beep Card No.: 6378050758368906" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Raleway" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

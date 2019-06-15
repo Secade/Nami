@@ -94,7 +94,7 @@ public class DashBoardController {
             }
         });
 
-        BeepBtn.setOnMouseClicked(event -> {
+        BeepBtn.setOnAction(event -> {
             try {
                 FXMLLoader pane = new FXMLLoader(getClass().getResource("/view/Beep.fxml"));
                 Stage stage = (Stage) BeepBtn.getScene().getWindow();
